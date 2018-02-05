@@ -6,7 +6,7 @@ Wait indicator to be shown on top of any container.
 
 ### Dependencies
 
-None
+[spin-js](https://github.com/fgnass/spin.js)
 
 ### Initialization
 
