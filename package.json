@@ -1,0 +1,58 @@
+{
+  "name": "@opuscapita/react-spinner",
+  "version": "1.0.0",
+  "description": "react spinner component",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel src -d lib",
+    "lint": "eslint src/**; exit 0",
+    "prepublish": "npm run build",
+    "test": "npm run build && cross-env NODE_ENV=test mocha --require babel-core/register --colors test/**/*.spec.*",
+    "preversion": "npm run lint && npm test",
+    "version": "npm run build && git add -A lib",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OpusCapita/react-spinner.git"
+  },
+  "keywords": [
+    "react",
+    "spinner"
+  ],
+  "homepage": "https://github.com/OpusCapita/react-spinner#readme",
+  "peerDependencies": {
+    "prop-types": "^15.6.0",
+    "react": "15 || 16",
+    "react-dom": "15 || 16"
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-core": "6.26.0",
+    "babel-eslint": "8.2.1",
+    "babel-preset-env": "1.6.1",
+    "babel-preset-react": "6.24.1",
+    "babel-preset-stage-1": "6.24.1",
+    "babel-register": "6.26.0",
+    "chai": "4.1.2",
+    "cross-env": "5.1.3",
+    "enzyme": "2.7.0",
+    "eslint": "4.17.0",
+    "eslint-config-airbnb": "16.1.0",
+    "eslint-plugin-import": "2.8.0",
+    "eslint-plugin-jsx-a11y": "6.0.3",
+    "eslint-plugin-react": "7.6.1",
+    "eslint-watch": "3.1.3",
+    "ignore-styles": "5.0.1",
+    "jsdom": "11.6.2",
+    "jsdom-global": "3.0.2",
+    "mocha": "5.0.0",
+    "prop-types": "^15.6.0",
+    "react": "15.4.x",
+    "react-addons-test-utils": "15.6.2",
+    "react-dom": "15.4.x"
+  },
+  "dependencies": {
+    "spin.js": "2.3.2"
+  }
+}
