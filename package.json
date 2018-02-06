@@ -1,6 +1,6 @@
 {
   "name": "@opuscapita/react-spinner",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "react spinner component",
   "main": "lib/index.js",
   "scripts": {
