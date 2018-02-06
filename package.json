@@ -24,8 +24,7 @@
   "peerDependencies": {
     "prop-types": "^15.6.0",
     "react": "15.4.x",
-    "react-dom": "15.4.x",
-    "spin.js": "2.3.2"
+    "react-dom": "15.4.x"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
@@ -52,5 +51,8 @@
     "react": "15.4.x",
     "react-addons-test-utils": "15.6.2",
     "react-dom": "15.4.x"
+  },
+  "dependencies": {
+    "spin.js": "2.3.2"
   }
 }
