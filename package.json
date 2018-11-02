@@ -2,7 +2,7 @@
   "author": "OpusCapita (www.opuscapita.com)",
   "name": "@opuscapita/react-spinner",
   "private": false,
-  "version": "1.1.1",
+  "version": "2.0.0",
   "description": "react spinner component",
   "main": "lib/index.js",
   "scripts": {
