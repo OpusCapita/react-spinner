@@ -9,7 +9,7 @@
     "build": "babel src -d lib",
     "lint": "eslint src/**; exit 0",
     "prepublish": "npm run build",
-    "test": "npm run build && cross-env NODE_ENV=test mocha -r esm --colors test/**/*.spec.*",
+    "test": "npm run build && cross-env NODE_ENV=test mocha --require ./tools/test.setup.js --colors test/**/*.spec.*",
     "preversion": "npm run lint && npm test",
     "version": "npm run build && git add -A lib",
     "postversion": "git push && git push --tags"

@@ -19,7 +19,7 @@ export default class Spinner extends React.PureComponent {
   }
 
   componentDidMount() {
-    window.setTimeout(() => {
+    setTimeout(() => {
       this.spinner = new SpinJS(this.props.config);
       this.spinner.spin(this.container);
     }, this.props.delay);
