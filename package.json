@@ -2,7 +2,7 @@
   "author": "OpusCapita (www.opuscapita.com)",
   "name": "@opuscapita/react-spinner",
   "private": false,
-  "version": "2.0.1",
+  "version": "3.0.0",
   "description": "OpusCapita react spinner component",
   "license": "MIT",
   "keywords": [
