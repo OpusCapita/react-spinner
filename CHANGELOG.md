@@ -2,6 +2,11 @@
 
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
+## 3.0.0
+* Upgraded to new react component template
+* Change from named export to default export
+* Include spin.js with src because the code is ES6
+
 ## 2.0.1
 * unit tests fixed
 
