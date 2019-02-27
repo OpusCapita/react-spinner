@@ -2,12 +2,13 @@
 /* eslint-disable react/forbid-prop-types */
 import React from 'react';
 import PropTypes from 'prop-types';
-import SpinJS from 'spin.js';
+import { Spinner as SpinJS } from './spin.js/spin';
+import './spin.js/spin.css';
 
 export default class Spinner extends React.PureComponent {
   static propTypes = {
     config: PropTypes.object,
-    delay: PropTypes.number.isRequired,
+    delay: PropTypes.number,
   }
 
   static defaultProps = {
@@ -15,11 +16,11 @@ export default class Spinner extends React.PureComponent {
       color: '#FAC51D',
       width: 4,
     },
-    delay: 500, // eslint-disable-line
+    delay: 500,
   }
 
   componentDidMount() {
-    window.setTimeout(() => {
+    setTimeout(() => {
       this.spinner = new SpinJS(this.props.config);
       this.spinner.spin(this.container);
     }, this.props.delay);
